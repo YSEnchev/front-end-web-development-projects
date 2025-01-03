@@ -19,6 +19,7 @@ body {
 .container {
     display: flex;
     width: 90vw;
+    max-width: 1200px;
 }
 
 .panel {
@@ -50,6 +51,7 @@ body {
 
 .panel.active h3 {
     opacity: 1;
+    transition: opacity 0.3s ease-in 0.4ms;
 }
 
 @media (max-width: 480px) {
