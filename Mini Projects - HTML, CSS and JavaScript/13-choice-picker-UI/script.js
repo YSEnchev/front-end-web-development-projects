@@ -71,3 +71,32 @@ function highlightTag(tag) {
 function unHighlightTag(tag) {
   tag.classList.remove('highlight');
 }
+
+function randomSelect() {
+  const times = 30;
+
+  const interval = setInterval(() => {
+    const randomTag = pickRandomTag();
+
+    highlightTag(randomTag);
+
+    setTimeout(() => {
+      unHighlightTag(randomTag);
+    }, 100);
+  }, 100);
+
+  setTimeout(() => {}, times * 100);
+}
+
+function pickRandomTag() {
+  const tags = document.querySelectorAll('.tag');
+  return tags[Math.floor(Math.random() * tags.length)];
+}
+
+function highlightTag(tag) {
+  tag.classList.add('highlight');
+}
+
+function highlightTag(tag) {
+  tag.classList.remove('highlight');
+}
