@@ -31,6 +31,8 @@ function createTags(input) {
   });
 }
 
+////////////////////////////////// ->
+
 function randomSelect() {
   const times = 30;
 
