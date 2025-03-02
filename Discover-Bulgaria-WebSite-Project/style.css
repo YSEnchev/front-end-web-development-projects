@@ -9,9 +9,18 @@
     box-sizing: inherit;
 }
 
-html {
+S html {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    padding: 5px;
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
 
 .frame-1 {
     background-image: url(./images/places-to-visit-in-bulgaria.jpg);
@@ -20,6 +29,8 @@ html {
     height: 100vh;
     width: 100%;
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 
@@ -87,9 +98,75 @@ button {
 
 .explore {
     width: 135px;
+    margin-top: 15px;
 }
 
 .footer-info-frame1 {
     color: #fff;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 15px 0px;
+    margin-top: 130px;
+
+}
+
+.footer-article>p {
+    padding: 5px;
+
+}
+
+.footer-article p:first-child {
+    font-size: 20px;
+}
+
+
+.frame-2 {
+    padding: 80px 30px;
+    display: grid;
+    /* grid-template-columns: repeat(1, 1fr); */
+    grid-template-rows: repeat(1, 1fr);
+    height: 100vh;
+    /* width: 100%; */
+    overflow: hidden;
+    /* justify-content: center; */
+    justify-items: center;
+    /* column-gap: 15px; */
+    position: relative;
+}
+
+.frame-2 .headline {
+    width: 550px;
+    font-size: 21px;
+    margin: 0 auto;
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1/1;
+    position: relative;
+}
+
+.frame-2 .headline p {
+    padding-top: 40px;
+    font-size: 20px;
+    /* margin-bottom: 20px; */
+
+}
+
+.frame-2 img {
+    width: 430px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.images {
+    grid-row: 2/3;
+    justify-self: center;
+
+}
+
+.overlay-text {
+    color: #fff;
+    position: absolute;
+    bottom: 120px;
+    padding-left: 25px;
 }
