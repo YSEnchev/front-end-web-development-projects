@@ -152,7 +152,8 @@ button {
 
 }
 
-.frame-2 img {
+.frame-2 img,
+.frame-4 img {
     width: 430px;
     height: 400px;
     border-radius: 10px;
