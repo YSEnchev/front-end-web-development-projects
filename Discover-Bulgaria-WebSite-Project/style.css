@@ -175,11 +175,33 @@ button {
 .frame-3 {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 80px 30px;
 }
 
 .main-info-heading {
     width: 590px;
+}
+
+.options-menu {
+    padding: 48px 0px;
+}
+
+.info-heading {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+}
+
+.info-icons {
+    display: flex
+}
+
+.info-icons i {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-frame-3 {
