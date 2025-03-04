@@ -171,3 +171,25 @@ button {
     bottom: 120px;
     padding-left: 25px;
 }
+
+.frame-3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.main-info-heading {
+    width: 590px;
+}
+
+.image-frame-3 {
+    width: 575px;
+    border-radius: 10px;
+}
+
+.heading-info-frame-4 {
+    text-align: center;
+    width: 720px;
+    margin: 0 auto;
+
+}
